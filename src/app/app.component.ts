@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'falconUITemplate';
+
+  buttonToggleContent = [
+    {id: 1, text: 'Button 1'},
+    {id: 2, text: 'Button 2'},
+    {id: 3, text: 'Button 3'},
+  ];
+
+  selectedButtonToggle(e: any){
+    console.log(e);
+  }
 }

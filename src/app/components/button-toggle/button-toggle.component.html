@@ -1,0 +1,5 @@
+<div class="button-toggle-wrapper">
+  <button class="transparent-button" *ngFor="let item of content" (click)="selectButton(item.id)" [class.active]="activeButton === item.id">
+    {{item.text}}
+  </button>
+</div>

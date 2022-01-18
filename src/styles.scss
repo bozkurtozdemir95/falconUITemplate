@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/fonts/Mindset/stylesheet.css";
+@import "./assets/fonts/Roboto/stylesheet.css";
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #380808;
+}

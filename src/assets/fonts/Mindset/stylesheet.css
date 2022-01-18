@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Mindset Slim';
+    src: url('Mindset-Slim.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mindset';
+    src: url('Mindset-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
