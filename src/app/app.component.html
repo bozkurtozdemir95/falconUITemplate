@@ -1,5 +1,6 @@
-<falcon-button-toggle [content]="buttonToggleContent" (valueChange)="selectedButtonToggle($event)"></falcon-button-toggle>
-<falcon-progress-button [left]="15" [total]="30"></falcon-progress-button>
+<falcon-button-toggle [content]="buttonToggleContent"
+                      [activeButtonID]="buttonToggleContent[0].id"
+                      (valueChange)="selectedButtonToggle($event)"></falcon-button-toggle>
 <ul>
   <li>Sidebar</li>
   <li>Button Toggle</li>

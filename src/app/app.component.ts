@@ -9,9 +9,8 @@ export class AppComponent {
   title = 'falconUITemplate';
 
   buttonToggleContent = [
-    {id: 1, text: 'Button 1'},
-    {id: 2, text: 'Button 2'},
-    {id: 3, text: 'Button 3'},
+    {id: 1, text: 'SLOW'},
+    {id: 2, text: 'FAST'},
   ];
 
   selectedButtonToggle(e: any){

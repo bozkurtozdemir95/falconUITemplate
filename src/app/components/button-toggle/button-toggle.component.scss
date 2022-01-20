@@ -1,22 +1,44 @@
 .button-toggle-wrapper {
   display: inline-flex;
   align-items: center;
-  padding: 10px;
+  padding: 7.5px 5px;
   background: linear-gradient(85.6deg, rgba(0, 0, 0, 0.2) 0.35%, rgba(0, 0, 0, 0.1) 96.41%);
   box-shadow: 0 1px 2px rgba(255, 255, 255, 0.3), inset 0 3px 4px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
+  position: relative;
+  height: 53px;
+  box-sizing: border-box;
+  width: 100%;
 
   button {
-    color: #fff;
+    color: rgba(255, 255, 255, .2);
     padding: 10px;
     border-radius: 10px;
     background: transparent;
     border: 0;
     cursor: pointer;
+    z-index: 9;
+    height: 100%;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bungee', cursive;
+    transition: all .25s linear;
+    width: 100%;
 
     &.active {
-      background: radial-gradient(91.96% 91.96% at 50% 0%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #50B88B;
+      color: #fff;
+    }
+
+    &.toggle-slider {
+      background: url('../../../assets/texture.png'), radial-gradient(91.96% 91.96% at 50% 0%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #50B88B;
       box-shadow: 0 10px 30px rgba(8, 8, 8, 0.2), inset 0px -1px 1px rgba(0, 0, 0, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.2);
+      position: absolute;
+      height: calc(100% - 15px);
+      width: unset;
+      transition: all .25s linear;
     }
   }
 }

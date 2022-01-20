@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonToggleComponent } from './components/button-toggle/button-toggle.component';
 import { ProgressButtonComponent } from './components/progress-button/progress-button.component';
+import { ButtonComponent } from './components/button/button.component';
+import { SlideToggleComponent } from './components/slide-toggle/slide-toggle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonToggleComponent,
     ProgressButtonComponent,
+    ButtonComponent,
+    SlideToggleComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,7 @@
 <div class="button-toggle-wrapper">
-  <button class="transparent-button" *ngFor="let item of content" (click)="selectButton(item.id)" [class.active]="activeButton === item.id">
+  <button class="toggle-slider" #targetSlider></button>
+  <button class="transparent-button" *ngFor="let item of content"
+          (click)="selectButton(item.id, $event)" [class.active]="activeButtonID === item.id">
     {{item.text}}
   </button>
 </div>
