@@ -1,9 +1,10 @@
 <button class="progress-button">
   <span class="content">
-    >
+    <app-icon [icon]="'arrow-right'"></app-icon>
   </span>
   <svg>
-    <rect x="3" y="3" rx="24" ry="24" width="100%" height="100%"
-          style="stroke-dashoffset:{{180 / total * (total - left)}};animation: dash {{left}}s linear forwards;"/>
+    <rect x="3" y="3" rx="23" ry="23"
+          stroke-alignment="inner"
+          style="stroke-dashoffset:{{169 - (169 / total * (total - left))}};animation: dash {{left}}s linear forwards;"/>
   </svg>
 </button>
