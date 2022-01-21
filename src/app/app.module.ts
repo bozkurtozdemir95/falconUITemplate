@@ -8,6 +8,7 @@ import { ProgressButtonComponent } from './components/progress-button/progress-b
 import { ButtonComponent } from './components/button/button.component';
 import { SlideToggleComponent } from './components/slide-toggle/slide-toggle.component';
 import { IconComponent } from './components/icon/icon.component';
+import { EllipseButtonComponent } from './components/ellipse-button/ellipse-button.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { IconComponent } from './components/icon/icon.component';
     ButtonComponent,
     SlideToggleComponent,
     IconComponent,
+    EllipseButtonComponent,
   ],
   imports: [
     BrowserModule,

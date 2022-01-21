@@ -1,0 +1,39 @@
+.ellipse-button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: url('../../../assets/img/texture.png'), #4B544C;
+  box-shadow: 0 5px 20px rgba(8, 8, 8, 0.15), inset 0 -1px 1px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.04);
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+
+  &:hover, &.active {
+    background: radial-gradient(54.71% 147.75% at 19.49% 32.33%, rgba(255, 255, 255, 0.402) 0%, rgba(31, 64, 24, 0) 100%), rgba(122, 31, 31, 0.59);
+    transition: all .25s;
+    svg {
+      opacity: 1;
+    }
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .25s;
+  }
+
+  app-icon {
+    ::ng-deep svg {
+      width: 20px;
+      max-height: 20px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

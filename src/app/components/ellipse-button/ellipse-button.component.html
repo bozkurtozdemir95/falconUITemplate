@@ -1,0 +1,15 @@
+<button class="ellipse-button">
+  <div class="content">
+    <app-icon [icon]="icon"></app-icon>
+  </div>
+
+  <svg width="100%" height="100%">
+    <defs>
+      <radialGradient id="gradient">
+        <stop offset="0" stop-color="rgba(255, 239, 206, 1)" />
+        <stop offset="1" stop-color="rgba(255, 236, 196, 1)" />
+      </radialGradient>
+    </defs>
+    <circle cx="24" cy="24" r="21.5" stroke="url(#gradient)" stroke-width="5" fill="none" />
+  </svg>
+</button>
