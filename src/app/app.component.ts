@@ -7,7 +7,7 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   title = 'falconUITemplate';
-
+  isSidebarOpen = false;
   buttonToggleContent = [
     {id: 1, text: 'SLOW'},
     {id: 2, text: 'FAST'},
@@ -15,5 +15,10 @@ export class AppComponent {
 
   selectedButtonToggle(e: any){
     console.log(e);
+  }
+
+  toggleSidebar(e: any){
+    console.log(e);
+    this.isSidebarOpen = e;
   }
 }

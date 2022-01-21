@@ -1,0 +1,6 @@
+<div id="sidebar" [class.open]="isSidebarOpen">
+ <div class="sidebar-content">
+   <ng-content></ng-content>
+ </div>
+  <div class="sidebar-outer" (click)="toggle()"></div>
+</div>

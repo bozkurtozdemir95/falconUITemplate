@@ -9,6 +9,8 @@ import { ButtonComponent } from './components/button/button.component';
 import { SlideToggleComponent } from './components/slide-toggle/slide-toggle.component';
 import { IconComponent } from './components/icon/icon.component';
 import { EllipseButtonComponent } from './components/ellipse-button/ellipse-button.component';
+import { PopupComponent } from './components/popup/popup.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { EllipseButtonComponent } from './components/ellipse-button/ellipse-butt
     SlideToggleComponent,
     IconComponent,
     EllipseButtonComponent,
+    PopupComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
