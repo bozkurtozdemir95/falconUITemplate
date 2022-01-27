@@ -1,0 +1,85 @@
+.dropdown-wrapper {
+  position: relative;
+  cursor: pointer;
+
+  .dropdown-toggler {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    height: 53px;
+    background: linear-gradient(85.6deg, rgba(0, 0, 0, 0.2) 0.35%, rgba(0, 0, 0, 0.1) 96.41%);
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.3), inset 0 3px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: 0;
+    width: 100%;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    font-family: 'Bungee', cursive;
+    transition: all .3s;
+
+    img {
+      width: 37px;
+      margin-right: 10px;
+    }
+
+    falcon-icon {
+      display: flex;
+      margin-left: auto;
+
+      ::ng-deep svg {
+        width: 16px;
+        max-height: 16px;
+        fill: #D6D6D6;
+        transition: all .3s;
+      }
+    }
+
+    &.active {
+      border-radius: 10px 10px 0 0;
+      falcon-icon {
+        ::ng-deep svg {
+          fill: #FFFFFF;
+        }
+      }
+    }
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #474D4B;
+    box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.08), inset 0px 1px 1px rgba(255, 255, 255, 0.04);
+    transform: translateY(100%);
+    border-radius: 0 0 10px 10px;
+
+    ::ng-deep .dropdown-item {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      line-height: 18px;
+      color: #FFFFFF;
+      font-family: 'Bungee', cursive;
+      cursor: pointer;
+      transition: all .3s;
+      border-bottom: 1px solid rgba(255, 255, 255, .1);
+
+      &:hover {
+        background: rgba(255, 255, 255, .03);
+      }
+
+      &:last-child {
+        border: 0;
+      }
+
+      img {
+        width: 37px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

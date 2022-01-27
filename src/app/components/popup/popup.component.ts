@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-popup',
+  selector: 'falcon-popup',
   templateUrl: './popup.component.html',
   styleUrls: ['./popup.component.scss']
 })
 export class PopupComponent implements OnInit {
+  @Input() showPopup = true;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
+  }
+
+  closePopup() {
+    this.showPopup = false;
   }
 
 }

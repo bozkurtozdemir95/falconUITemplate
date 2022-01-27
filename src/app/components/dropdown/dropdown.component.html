@@ -1,0 +1,11 @@
+<div class="dropdown-wrapper">
+  <div class="dropdown-toggler" [class.active]="!isCollapsed" (click)="isCollapsed = !isCollapsed">
+    <img src="{{activeItem.img}}" alt="falcon">
+    <span>{{activeItem.title}}</span>
+<!--    <falcon-icon [icon]="'arrow-down'"></falcon-icon>-->
+  </div>
+
+  <div class="dropdown-menu" *ngIf="!isCollapsed">
+   <ng-content></ng-content>
+  </div>
+</div>

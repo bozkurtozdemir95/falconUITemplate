@@ -1,3 +1,8 @@
-<div class="popup-wrapper">
-
+<div class="popup-wrapper" *ngIf="showPopup">
+  <div class="popup-bg" (click)="showPopup = !showPopup"></div>
+  <div class="popup-box">
+    <div class="popup-content">
+      <ng-content></ng-content>
+    </div>
+  </div>
 </div>

@@ -11,6 +11,9 @@ import { IconComponent } from './components/icon/icon.component';
 import { EllipseButtonComponent } from './components/ellipse-button/ellipse-button.component';
 import { PopupComponent } from './components/popup/popup.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { TextInputComponent } from './components/text-input/text-input.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { CheckboxInputComponent } from './components/checkbox-input/checkbox-input.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +26,18 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     EllipseButtonComponent,
     PopupComponent,
     SidebarComponent,
+    TextInputComponent,
+    DropdownComponent,
+    CheckboxInputComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
+  exports: [
+    DropdownComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

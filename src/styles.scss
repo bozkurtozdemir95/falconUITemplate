@@ -3,7 +3,13 @@
 @import "./assets/fonts/Roboto/stylesheet.css";
 @import "./assets/fonts/Bungee/stylesheet.css";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background: rgba(82, 88, 86, 1);
 }
+
