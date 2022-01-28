@@ -24,8 +24,11 @@ export class AppComponent {
     console.log(e);
   }
 
-  toggleSidebar(e: any) {
+  checkValue(e: any){
     console.log(e);
+  }
+
+  toggleSidebar(e: any) {
     this.isSidebarOpen = e;
   }
 

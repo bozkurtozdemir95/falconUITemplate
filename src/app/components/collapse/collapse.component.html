@@ -1,0 +1,8 @@
+<div class="collapse">
+  <div class="collapse-toggler" [class.active]="!isCollapsed" (click)="isCollapsed = !isCollapsed">
+    <falcon-icon [icon]="'arrow-down'"></falcon-icon>
+  </div>
+  <div class="collapse-content" [class.active]="!isCollapsed">
+    <ng-content></ng-content>
+  </div>
+</div>

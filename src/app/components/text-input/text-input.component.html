@@ -1,4 +1,4 @@
 <div class="text-input">
-  <input [disabled]="disabled" type="text" [id]="name">
+  <input [disabled]="disabled" type="text" [id]="name" (input)="onChange($event.target)">
   <label *ngIf="label" [for]="name">{{name}}</label>
 </div>

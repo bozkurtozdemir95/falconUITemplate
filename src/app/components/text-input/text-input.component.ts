@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'falcon-text-input',
@@ -9,9 +9,15 @@ export class TextInputComponent implements OnInit {
   @Input() label: boolean = false;
   @Input() disabled: boolean = false;
   @Input() name: string = '';
-  constructor() { }
+  value = '';
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  onChange(value: any): void {
+    console.log(value.value);
+  }
 }

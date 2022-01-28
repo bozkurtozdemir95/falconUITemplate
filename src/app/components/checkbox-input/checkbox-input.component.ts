@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'falcon-checkbox-input',
@@ -7,11 +7,16 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class CheckboxInputComponent implements OnInit {
   @Input() text: string = '';
+  @Output() valueChange = new EventEmitter<number>();
 
   constructor() {
   }
 
   ngOnInit(): void {
+  }
+
+  isChecked(e: any){
+    this.valueChange.emit(e.target.checked)
   }
 
 }

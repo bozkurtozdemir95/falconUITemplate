@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'falcon-dropdown',
@@ -13,6 +13,10 @@ export class DropdownComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  closeDropdown() {
+    this.isCollapsed = true;
   }
 
 }
